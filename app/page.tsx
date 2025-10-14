@@ -9,7 +9,7 @@ export default function Home() {
       >
       <div className="flex flex-col mb-10 gap-5 text-start">
           <h1 className="font-departure-mono text-4xl font-semibold">EXPLAINING THINGS</h1>
-        <p className="font-departure-mono text-md max-w-md">
+        <p className="font-departure-mono text-lg max-w-lg">
           Entenda o mundo a sua volta, explicações simples para curiosidades de
           todos os dias.
         </p>
@@ -17,7 +17,7 @@ export default function Home() {
       <div className="text-sm font-departure-mono uppercase">september 24, 2025</div>
       </header>
       <div>
-        <Image src="/images/logo.png" alt="Logo" width={200} height={200} />
+        <Image src="/pen.png" alt="Logo" width={200} height={200} />
       </div>
     </div>
   );
