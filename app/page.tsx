@@ -43,7 +43,7 @@ export default function Home() {
         <div className="flex-1 flex items-start justify-center lg:justify-end w-full">
           <div className="relative w-full max-w-md aspect-square">
             <Image
-              src="/cover.svg"
+              src="/markers.svg"
               alt="Explaining Things Cover"
               fill
               className="object-contain"
@@ -78,9 +78,9 @@ export default function Home() {
             href="#"
             className="flex flex-col items-center border border-double border-[#333333]/60 p-5"
           >
-            <div className="relative w-full max-w-[250px] aspect-square">
+            <div className="relative w-full max-w-[250px] aspect-square my-5">
               <Image
-                src="/cover.svg"
+                src="/stairs.svg"
                 alt="Explaining Things Cover"
                 fill
                 className="object-contain"
@@ -103,9 +103,9 @@ export default function Home() {
             href="#"
             className="flex flex-col items-center border border-double border-[#333333]/60 p-5"
           >
-            <div className="relative w-full max-w-[250px] aspect-square">
+            <div className="relative w-full max-w-[250px] aspect-square my-5">
               <Image
-                src="/cover2.svg"
+                src="/dismantled.svg"
                 alt="Explaining Things Cover"
                 fill
                 className="object-contain"
@@ -128,9 +128,9 @@ export default function Home() {
             href="#"
             className="flex flex-col items-center border border-double border-[#333333]/60 p-5"
           >
-            <div className="relative w-full max-w-[250px] aspect-square">
+            <div className="relative w-full max-w-[250px] aspect-square my-5">
               <Image
-                src="/cover.svg"
+                src="/markers.svg"
                 alt="Explaining Things Cover"
                 fill
                 className="object-contain"
@@ -163,7 +163,7 @@ export default function Home() {
         <div className="flex-1 flex items-start justify-center lg:justify-end w-full">
           <div className="relative w-full max-w-md aspect-square">
             <Image
-              src="/cover2.svg"
+              src="/dismantled.svg"
               alt="Explaining Things Cover"
               fill
               className="object-contain"
@@ -209,7 +209,7 @@ export default function Home() {
       </div>
 
       <div className="flex flex-col items-center text-center mt-20 md:mt-28 mb-20 md:mb-24 gap-6">
-        <h3 className="text-sm md:text-base font-semibold tracking-wider uppercase">
+        <h3 className="text-sm md:text-lg font-semibold tracking-wider uppercase">
           Inscreva-se para atualizações
         </h3>
 
@@ -226,7 +226,7 @@ export default function Home() {
           <input
             type="email"
             placeholder="INSIRA O SEU EMAIL"
-            className="border-2 border-black/80 bg-transparent px-10 py-2 text-xs tracking-wide placeholder:text-black/40 focus:outline-none focus:border-black transition-colors"
+            className="border-2 border-black/80 bg-transparent px-16 py-2 text-xs tracking-wide placeholder:text-black/40 focus:outline-none focus:border-black transition-colors"
           />
           <button
             type="submit"
