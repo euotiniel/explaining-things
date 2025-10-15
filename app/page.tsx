@@ -1,9 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
+import { components } from "@/config/post";
 
 export default function Home() {
   return (
-    <div className="min-h-screen p-6 md:p-10">
+    <div className="min-h-screen ">
       <header className="w-full flex flex-col md:flex-row items-start justify-between border-b border-[#333333]/20 py-6 md:py-10 px-2.5 md:px-6 gap-4">
         <div className="flex flex-col gap-3 md:gap-5 text-start">
           <h1 className=" text-3xl md:text-4xl font-semibold">
