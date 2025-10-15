@@ -40,7 +40,7 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="flex-1 flex items-start justify-center lg:justify-end w-full">
+        <div className="flex-1 flex items-start justify-center lg:justify-end w-full select-none">
           <div className="relative w-full max-w-md aspect-square">
             <Image
               src="/markers.svg"
@@ -78,7 +78,7 @@ export default function Home() {
             href="#"
             className="flex flex-col items-center border border-double border-[#333333]/60 p-5"
           >
-            <div className="relative w-full max-w-[250px] aspect-square my-5">
+            <div className="relative w-full max-w-[250px] aspect-square my-5 select-none">
               <Image
                 src="/stairs.svg"
                 alt="Explaining Things Cover"
@@ -103,7 +103,7 @@ export default function Home() {
             href="#"
             className="flex flex-col items-center border border-double border-[#333333]/60 p-5"
           >
-            <div className="relative w-full max-w-[250px] aspect-square my-5">
+            <div className="relative w-full max-w-[250px] aspect-square my-5 select-none">
               <Image
                 src="/dismantled.svg"
                 alt="Explaining Things Cover"
@@ -128,7 +128,7 @@ export default function Home() {
             href="#"
             className="flex flex-col items-center border border-double border-[#333333]/60 p-5"
           >
-            <div className="relative w-full max-w-[250px] aspect-square my-5">
+            <div className="relative w-full max-w-[250px] aspect-square my-5 select-none">
               <Image
                 src="/markers.svg"
                 alt="Explaining Things Cover"
@@ -160,7 +160,7 @@ export default function Home() {
       </div>
 
       <div className="flex flex-col-reverse lg:flex-row items-center gap-4 md:gap-6 px-2.5 md:px-6 my-20">
-        <div className="flex-1 flex items-start justify-center lg:justify-end w-full">
+        <div className="flex-1 flex items-start justify-center lg:justify-end w-full select-none">
           <div className="relative w-full max-w-md aspect-square">
             <Image
               src="/dismantled.svg"
