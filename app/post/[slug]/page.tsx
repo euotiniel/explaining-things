@@ -66,10 +66,10 @@ export default async function PostPage({ params }: PostPageProps) {
           <span className="text-xs font-departure-mono uppercase">
           Outubro 15, 2025
         </span>
-            <h1 className="text-2xl md:text-3xl font-semibold uppercase leading-tight">
+            <h1 className="text-2xl md:text-3xl font-semibold uppercase leading-tight text-center">
             {post.title}
           </h1>
-          <p className="text-lg md:text-xl max-w-full leading-relaxed">
+          <p className="text-base md:text-xl max-w-full leading-relaxed text-center">
             {post.description} </p>
             
         </div>

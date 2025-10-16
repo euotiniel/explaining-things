@@ -38,7 +38,7 @@ export default function RootLayout({
       <body
         className={`${departureMono.variable} ${geistMono.variable} ${geistSans.variable} antialiased`}
       >
-        <div className="flex justify-center px-5 py-16">
+        <div className="flex justify-center px-2 md:px-5 py-8 md:py-16">
           <div className="flex w-full max-w-[1100px] flex-col">{children}</div>
         </div>
       </body>

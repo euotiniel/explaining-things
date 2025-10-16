@@ -1,6 +1,7 @@
 import { Posts } from "@/posts/index";
 
 export type PostItem = {
+  id: number,
   title: string;
   description: string;
   slug: keyof typeof Posts;
@@ -14,6 +15,7 @@ export type PostItem = {
 
 export const components: PostItem[] = [
   {
+    id: 1,
     title: "Ciência por trás das escadas",
     description:
       "Explorando os princípios científicos que tornam as escadas seguras e funcionais.",

@@ -15,9 +15,6 @@ export default function Home() {
             de todos os dias.
           </p>
         </div>
-        <div className="text-xs font-departure-mono uppercase">
-          Outubro 15, 2025
-        </div>
       </header>
 
       <div className="flex flex-col-reverse lg:flex-row items-center gap-4 mt-5 md:gap-6 px-2.5 md:px-6">
@@ -78,7 +75,7 @@ export default function Home() {
           {components.map((post) => (
             <Link  
             href={`/post/${post.slug}`}
-            key={post.slug}
+            key={post.id}
             className="flex flex-col items-center border border-double border-[#333333]/60 p-5"
           >
             <div className="relative w-full max-w-[250px] aspect-square my-5 select-none">
@@ -115,7 +112,7 @@ export default function Home() {
 
       <div className="flex flex-col-reverse lg:flex-row items-center gap-4 md:gap-6 px-2.5 md:px-6 my-20">
         <div className="flex-1 flex items-start justify-center lg:justify-end w-full select-none">
-          <div className="relative w-full max-w-md aspect-square">
+          <div className="relative w-full max-w-md aspect-square mt-20 lg:mt-0">
             <Image
               src="/dismantled.svg"
               alt="Explaining Things Cover"
