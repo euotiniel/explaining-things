@@ -2,6 +2,7 @@ import { Posts } from "@/posts/index";
 
 export type PostItem = {
   title: string;
+  description: string;
   slug: keyof typeof Posts;
   component: (typeof Posts)[keyof typeof Posts];
   image: {
@@ -14,6 +15,8 @@ export type PostItem = {
 export const components: PostItem[] = [
   {
     title: "Ciência por trás das escadas",
+    description:
+      "Explorando os princípios científicos que tornam as escadas seguras e funcionais.",
     slug: "stairs",
     component: Posts["stairs"],
     image: {

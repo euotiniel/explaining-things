@@ -4,8 +4,8 @@ import { components } from "@/config/post";
 
 export default function Home() {
   return (
-    <div className="min-h-screen ">
-      <header className="w-full flex flex-col md:flex-row items-start justify-between border-b border-[#333333]/20 py-6 md:py-10 px-2.5 md:px-6 gap-4">
+    <div className="min-h-screen border border-double border-[#333333]/10 mt-10">
+      <header className="w-full flex flex-col md:flex-row items-start justify-between border-b border-[#333333]/10 py-6 md:py-10 px-2.5 md:px-6 gap-4">
         <div className="flex flex-col gap-3 md:gap-5 text-start">
           <h1 className=" text-3xl md:text-4xl font-semibold">
             EXPLAINING THINGS
@@ -75,14 +75,16 @@ export default function Home() {
 
       <div className="w-full flex flex-col items-start justify-center gap-4 md:gap-6 my-20 px-2.5 md:px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <Link
-            href="#"
+          {components.map((post) => (
+            <Link  
+            href={`/post/${post.slug}`}
+            key={post.slug}
             className="flex flex-col items-center border border-double border-[#333333]/60 p-5"
           >
             <div className="relative w-full max-w-[250px] aspect-square my-5 select-none">
               <Image
-                src="/stairs.svg"
-                alt="Explaining Things Cover"
+                src={post.image.src}
+                alt={post.image.alt}
                 fill
                 className="object-contain"
                 priority
@@ -91,64 +93,15 @@ export default function Home() {
 
             <div className="flex flex-col items-start justify-strat text-left">
               <h3 className="text-xl leading-relaxed mt-4">
-                Ciência por trás das escadas
+                {post.title}
               </h3>
               <p className="mt-2">
-                Explicações simples, diretas e visuais sobre fenômenos do dia a
-                dia.
+                {post.description}
               </p>
             </div>
           </Link>
-
-          <Link
-            href="#"
-            className="flex flex-col items-center border border-double border-[#333333]/60 p-5"
-          >
-            <div className="relative w-full max-w-[250px] aspect-square my-5 select-none">
-              <Image
-                src="/dismantled.svg"
-                alt="Explaining Things Cover"
-                fill
-                className="object-contain"
-                priority
-              />
-            </div>
-
-            <div className="flex flex-col items-start justify-strat text-left">
-              <h3 className="text-xl leading-relaxed mt-4">
-                Ciência por trás das escadas
-              </h3>
-              <p className="mt-2">
-                Explicações simples, diretas e visuais sobre fenômenos do dia a
-                dia.
-              </p>
-            </div>
-          </Link>
-
-          <Link
-            href="#"
-            className="flex flex-col items-center border border-double border-[#333333]/60 p-5"
-          >
-            <div className="relative w-full max-w-[250px] aspect-square my-5 select-none">
-              <Image
-                src="/markers.svg"
-                alt="Explaining Things Cover"
-                fill
-                className="object-contain"
-                priority
-              />
-            </div>
-
-            <div className="flex flex-col items-start justify-strat text-left">
-              <h3 className="text-xl leading-relaxed mt-4">
-                Ciência por trás das escadas
-              </h3>
-              <p className="mt-2">
-                Explicações simples, diretas e visuais sobre fenômenos do dia a
-                dia.
-              </p>
-            </div>
-          </Link>
+          ))}
+       
         </div>
       </div>
 
