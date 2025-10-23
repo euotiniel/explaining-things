@@ -4,20 +4,20 @@ import { components } from "@/config/post";
 
 export default function Home() {
   return (
-    <div className="min-h-screen border border-double border-[#333333]/10 mt-10">
-      <header className="w-full flex flex-col md:flex-row items-start justify-between border-b border-[#333333]/10 py-6 md:py-10 px-2.5 md:px-6 gap-4">
+    <div className="bg-[#F3F3F3] min-h-screen border border-dashed border-[#333333]/10 md:mt-10">
+      <header className="w-full flex flex-col md:flex-row items-start justify-between border-b border-dashed border-[#333333]/10 py-6 md:py-10 px-5 md:px-20 gap-4">
         <div className="flex flex-col gap-3 md:gap-5 text-start">
-          <h1 className=" text-3xl md:text-4xl font-semibold">
+          <h1 className="text-2xl md:text-5xl leading-tight">
             EXPLAINING THINGS
           </h1>
-          <p className="text-lg md:text-xl max-w-full leading-relaxed">
+          <p className="text-lg md:text-xl opacity-80 max-w-full leading-relaxed">
             Entenda o mundo a sua volta, explicações simples para curiosidades
             de todos os dias.
           </p>
         </div>
       </header>
 
-      <div className="flex flex-col-reverse lg:flex-row items-center gap-4 mt-5 md:gap-6 px-2.5 md:px-6">
+      <div className="flex flex-col-reverse lg:flex-row items-center gap-4 mt-5 md:gap-6 px-5 md:px-20">
         <div className="flex-1 flex flex-col gap-6 md:gap-7 text-base font-medium leading-relaxed text-justify ">
           <p className="first-letter:text-4xl">
             Explaining Things é um projeto que busca entender o que está por
@@ -51,7 +51,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="w-full flex flex-col items-start justify-center gap-4 md:gap-6 mt-36 md:mt-20 px-2.5 md:px-6">
+      <div className="w-full flex flex-col items-start justify-center gap-4 md:gap-6 mt-36 md:mt-20 px-5 md:px-20">
         <h2 className="text-3xl text-left max-w-2xl leading-relaxed">
           “O mundo é interessante em todos os lugares onde você decide olhar de
           verdade.”
@@ -62,7 +62,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="w-full flex flex-col gap-2 opacity-10 mt-10 px-2.5 md:px-6">
+      <div className="w-full flex flex-col gap-2 opacity-10 mt-10 px-5 md:px-20">
         <div className="w-full border-b border-[#333333]/60" />
         <div className="w-full border-b border-[#333333]/60" />
         <div className="w-full border-b border-[#333333]/60" />
@@ -70,13 +70,13 @@ export default function Home() {
         <div className="w-full border-b border-[#333333]/60" />
       </div>
 
-      <div className="w-full flex flex-col items-start justify-center gap-4 md:gap-6 my-20 px-2.5 md:px-6">
+      <div className="w-full flex flex-col items-start justify-center gap-4 md:gap-6 my-20 px-5 md:px-20">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {components.map((post) => (
             <Link  
             href={`/post/${post.slug}`}
             key={post.id}
-            className="flex flex-col items-center border border-double border-[#333333]/60 p-5"
+            className="flex flex-col items-center border border-dashed border-[#333333]/40 p-5"
           >
             <div className="relative w-full max-w-[250px] aspect-square my-5 select-none">
               <Image
@@ -102,7 +102,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="w-full flex flex-col gap-2 opacity-10 mt-10 px-2.5 md:px-6">
+      <div className="w-full flex flex-col gap-2 opacity-10 mt-10 px-5 md:px-20">
         <div className="w-full border-b border-[#333333]/60" />
         <div className="w-full border-b border-[#333333]/60" />
         <div className="w-full border-b border-[#333333]/60" />
@@ -110,7 +110,7 @@ export default function Home() {
         <div className="w-full border-b border-[#333333]/60" />
       </div>
 
-      <div className="flex flex-col-reverse lg:flex-row items-center gap-4 md:gap-6 px-2.5 md:px-6 my-20">
+      <div className="flex flex-col-reverse lg:flex-row items-center gap-4 md:gap-6 px-5 md:px-20 my-20">
         <div className="flex-1 flex items-start justify-center lg:justify-end w-full select-none">
           <div className="relative w-full max-w-md aspect-square mt-20 lg:mt-0">
             <Image
@@ -148,7 +148,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="w-full flex flex-col items-start justify-center gap-4 md:gap-6 mt-36 md:mt-40 px-2.5 md:px-6">
+      <div className="w-full flex flex-col items-start justify-center gap-4 md:gap-6 mt-36 md:mt-40 px-5 md:px-20">
         <h2 className="text-3xl text-left max-w-2xl leading-relaxed">
           “Se você não consegue explicar algo de forma simples, é porque não
           entendeu bem o suficiente.”
@@ -159,7 +159,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="flex flex-col items-center text-center mt-20 md:mt-28 mb-20 md:mb-24 gap-6">
+      <div className="flex flex-col items-center text-center mt-20 md:mt-28 mb-20 md:mb-24 gap-6  px-5 md:px-20">
         <h3 className="text-sm md:text-lg font-semibold tracking-wider uppercase">
           Inscreva-se para atualizações
         </h3>
@@ -188,11 +188,11 @@ export default function Home() {
         </form>
       </div>
 
-      <div className="w-full flex items-center justify-center mt-36 md:mt-40 px-2.5 md:px-6">
+      <div className="w-full flex items-center justify-center mt-36 md:mt-40 px-5 md:px-20">
         <h3 className="text-xl text-center leading-relaxed">***</h3>
       </div>
 
-      <footer className="w-full bg-[#EEE4D9] mt-32 pb-12">
+      <footer className="w-full mt-32 pb-12">
         <div className="max-w-3xl mx-auto px-6 md:px-12">
           <div className="space-y-8 text-center">
             <div>
@@ -207,7 +207,7 @@ export default function Home() {
 
             <p className="text-md opacity-90">Por Otoniel Emanuel</p>
 
-            <nav className="flex items-center justify-center gap-6 text-xs">
+            <nav className="flex items-center justify-center gap-6 text-xs uppercase">
               <a
                 href="#"
                 className="opacity-50 hover:opacity-100 transition-opacity underline decoration-1 underline-offset-4"
@@ -234,7 +234,7 @@ export default function Home() {
               </a>
             </nav>
 
-            <div className="pt-8 border-t border-black/10">
+            <div className="pt-8 border-t border-dashed border-black/10">
               <div className="flex flex-wrap items-center justify-center gap-3 text-xs opacity-40">
                 <span>Vol. I</span>
                 <span>·</span>
@@ -249,13 +249,7 @@ export default function Home() {
         </div>
       </footer>
 
-      <div className="w-full flex flex-col gap-2 opacity-10 mt-10 px-2.5 md:px-6">
-        <div className="w-full border-b border-[#333333]/60" />
-        <div className="w-full border-b border-[#333333]/60" />
-        <div className="w-full border-b border-[#333333]/60" />
-        <div className="w-full border-b border-[#333333]/60" />
-        <div className="w-full border-b border-[#333333]/60" />
-      </div>
+     
     </div>
   );
 }

@@ -23,7 +23,7 @@ export const components: PostItem[] = [
     component: Posts["stairs"],
     image: {
       url: "https://www.instagram.com/",
-      src: "/posts/stairs.svg",
+      src: "/posts/stairs/stairs.svg",
       alt: "Alt - Stairs",
     },
   },

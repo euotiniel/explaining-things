@@ -59,23 +59,23 @@ export default async function PostPage({ params }: PostPageProps) {
   const PostComponent = post.component;
 
   return (
-    <main className="border border-double border-[#333333]/10 mt-10">
+    <main className="bg-[#F3F3F3] min-h-screen border border-dashed border-[#333333]/10 md:mt-10">
       <article className="flex w-full flex-col">
-        <header className="flex items-end justify-between border-b border-[#333333]/10 py-6 md:py-10 px-2.5 md:px-6 ">
+        <header className="flex items-end justify-between border-b border-dashed border-[#333333]/10 py-6 md:py-16 px-5 md:px-20 ">
         <div className="flex flex-col items-center justify-center w-full gap-5">
           <span className="text-xs font-departure-mono uppercase">
           Outubro 15, 2025
         </span>
-            <h1 className="text-2xl md:text-3xl font-semibold uppercase leading-tight text-center">
+            <h1 className="text-2xl md:text-5xl leading-tight text-start">
             {post.title}
           </h1>
-          <p className="text-base md:text-xl max-w-full leading-relaxed text-center">
+          <p className="text-base md:text-lg opacity-70 max-w-full leading-relaxed text-center">
             {post.description} </p>
             
         </div>
 
         </header>
-        <div className="my-10 md:my-28 px-2.5 md:px-6 ">
+        <div className="my-8 md:my-14 px-5 md:px-32 ">
           <PostComponent />
         </div>
       </article>

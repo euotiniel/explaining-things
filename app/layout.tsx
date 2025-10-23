@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Inter } from "next/font/google";
 import localFont from "next/font/local";
 import { rootMetadata } from "./metadata";
 import "./globals.css";
@@ -11,6 +11,11 @@ const geistSans = Geist({
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
+
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
 });
 
@@ -36,10 +41,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${departureMono.variable} ${geistMono.variable} ${geistSans.variable} antialiased`}
+        className={`${departureMono.variable} ${geistMono.variable} ${geistSans.variable} ${inter.variable} antialiased`}
       >
-        <div className="flex justify-center px-2 md:px-5 py-8 md:py-16">
-          <div className="flex w-full max-w-[1100px] flex-col">{children}</div>
+        <div className="flex justify-center px-0 md:px-5 py-0 md:py-16">
+          <div className="flex w-full max-w-[1300px] flex-col">{children}</div>
         </div>
       </body>
     </html>
