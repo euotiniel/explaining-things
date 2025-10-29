@@ -24,3 +24,7 @@ body {
   color: var(--foreground);
   font-family: Georgia;
 }
+
+.font-shantell {
+  font-family: 'Shantell Sans', cursive;
+}

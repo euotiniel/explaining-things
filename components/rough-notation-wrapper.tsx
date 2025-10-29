@@ -1,21 +1,22 @@
 // components/RoughNotationWrapper.tsx
-'use client';
+'use client'
 
-import { useEffect, useRef } from 'react';
-import { annotate } from 'rough-notation';
-import type { RoughAnnotation, RoughAnnotationConfig } from 'rough-notation/lib/model';
+import { useEffect, useRef } from 'react'
+import { annotate } from 'rough-notation'
+import type { RoughAnnotation, RoughAnnotationConfig } from 'rough-notation/lib/model'
 
 interface RoughNotationWrapperProps {
-  children: React.ReactNode;
-  type?: RoughAnnotationConfig['type'];
-  color?: string;
-  animate?: boolean;
-  animationDuration?: number;
-  strokeWidth?: number;
-  padding?: number;
-  multiline?: boolean;
-  iterations?: number;
-  brackets?: RoughAnnotationConfig['brackets'];
+  children: React.ReactNode
+  type?: RoughAnnotationConfig['type']
+  color?: string
+  animate?: boolean
+  animationDuration?: number
+  strokeWidth?: number
+  padding?: number
+  multiline?: boolean
+  iterations?: number
+  brackets?: RoughAnnotationConfig['brackets']
+  className?: string // <--- adicionado aqui
 }
 
 export default function RoughNotationWrapper({
@@ -29,9 +30,10 @@ export default function RoughNotationWrapper({
   multiline = true,
   iterations = 2,
   brackets,
+  className, // <--- desestrutura aqui
 }: RoughNotationWrapperProps) {
-  const ref = useRef<HTMLSpanElement>(null);
-  const annotationRef = useRef<RoughAnnotation | null>(null);
+  const ref = useRef<HTMLSpanElement>(null)
+  const annotationRef = useRef<RoughAnnotation | null>(null)
 
   useEffect(() => {
     if (ref.current && !annotationRef.current) {
@@ -45,17 +47,20 @@ export default function RoughNotationWrapper({
         multiline,
         iterations,
         brackets,
-      });
-      
-      annotationRef.current.show();
+      })
+      annotationRef.current.show()
     }
 
     return () => {
       if (annotationRef.current) {
-        annotationRef.current.hide();
+        annotationRef.current.hide()
       }
-    };
-  }, [type, color, animate, animationDuration, strokeWidth, padding, multiline, iterations, brackets]);
+    }
+  }, [type, color, animate, animationDuration, strokeWidth, padding, multiline, iterations, brackets])
 
-  return <span ref={ref}>{children}</span>;
+  return (
+    <span ref={ref} className={className}>
+      {children}
+    </span>
+  )
 }
