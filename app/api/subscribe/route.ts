@@ -1,6 +1,9 @@
 export async function POST(req: Request) {
+
   try {
     const { email } = await req.json();
+
+     
 
     const audienceResponse = await fetch(process.env.NEXT_PUBLIC_API_URL!, {
       method: "POST",
