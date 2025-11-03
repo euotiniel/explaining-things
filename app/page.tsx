@@ -4,11 +4,11 @@ import { components } from "@/config/post";
 
 export default function Home() {
   return (
-    <div className="bg-[#F3F3F3] min-h-screen border border-dashed border-[#333333]/10 md:mt-10">
+    <div className="bg-[#F3F3F3] min-h-screen border border-dashed border-[#333333]/10 my-16">
       <header className="w-full flex flex-col md:flex-row items-start justify-between border-b border-dashed border-[#333333]/10 py-6 md:py-10 px-5 md:px-20 gap-4">
         <div className="flex flex-col gap-3 md:gap-5 text-start">
           <h1 className="text-2xl md:text-5xl leading-tight">
-            EXPLAINING THINGS
+            EXPLICANDO COISAS
           </h1>
           <p className="text-lg md:text-xl opacity-80 max-w-full leading-relaxed">
             Entenda o mundo a sua volta, explicações simples para curiosidades
@@ -20,7 +20,7 @@ export default function Home() {
       <div className="flex flex-col-reverse lg:flex-row items-center gap-4 mt-5 md:gap-6 px-5 md:px-20">
         <div className="flex-1 flex flex-col gap-6 md:gap-7 text-base font-medium leading-relaxed text-justify ">
           <p className="first-letter:text-4xl">
-            Explaining Things é um projeto que busca entender o que está por
+            Explicando Coisas é um projeto que busca entender o que está por
             trás do cotidiano. Ele analisa fenômenos comuns — luz, som, toque,
             movimento — de forma técnica, visual e interativa.
           </p>
@@ -42,7 +42,7 @@ export default function Home() {
           <div className="relative w-full max-w-md aspect-square">
             <Image
               src="/markers.svg"
-              alt="Explaining Things Cover"
+              alt="Explicando Coisas Cover"
               fill
               className="object-contain"
               priority
@@ -115,7 +115,7 @@ export default function Home() {
           <div className="relative w-full max-w-md aspect-square mt-20 lg:mt-0">
             <Image
               src="/dismantled.svg"
-              alt="Explaining Things Cover"
+              alt="Explicando Coisas Cover"
               fill
               className="object-contain"
               priority
@@ -138,7 +138,7 @@ export default function Home() {
             simples até você tentar explicar.
           </p>
           <p>
-            Essa ideia ficou na cabeça. O Explaining Things nasceu disso: da
+            Essa ideia ficou na cabeça. O Explicando Coisas nasceu disso: da
             vontade de aprender o que está por trás do que já é familiar.
           </p>
           <p>
@@ -197,7 +197,7 @@ export default function Home() {
           <div className="space-y-8 text-center">
             <div>
               <h2 className="text-lg font-semibold uppercase mb-2">
-                Explaining Things
+                Explicando Coisas
               </h2>
               <p className="text-base leading-relaxed max-w-md mx-auto">
                 Entenda o mundo a sua volta, explicações simples para

@@ -1,18 +1,18 @@
 import type { Metadata } from "next";
 
 export const WEBSITE_HOST_URL = "https://explainingthings.com";
-export const SITE_NAME = "Explaining Things";
+export const SITE_NAME = "Explicando Coisas";
 export const SITE_TAGLINE = "Entendendo o que está por trás do cotidiano";
 
 export const meta = {
-  title: "Explaining Things — Entendendo o que está por trás do cotidiano",
+  title: "Explicando Coisas — Entendendo o que está por trás do cotidiano",
   description:
-    "Explaining Things é um projeto que busca entender o que está por trás do cotidiano. Ele analisa fenômenos comuns — luz, som, toque, movimento — de forma técnica, visual e interativa. A ideia é tornar o comum compreensível.",
+    "Explicando Coisas é um projeto que busca entender o que está por trás do cotidiano. Ele analisa fenômenos comuns — luz, som, toque, movimento — de forma técnica, visual e interativa. A ideia é tornar o comum compreensível.",
   image: `${WEBSITE_HOST_URL}/opengraph-image.png`,
   favicon: "/favicon.ico",
   keywords: [
     // Termos principais
-    "explaining things",
+    "Explicando Coisas",
     "explicando coisas",
     "como as coisas funcionam",
     "ciência cotidiana",

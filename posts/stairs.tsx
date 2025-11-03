@@ -1,6 +1,9 @@
 import React from "react";
 import Image from "next/image";
 import RoughNotationWrapper from "@/components/rough-notation-wrapper";
+import StairCalculator from "@/components/stair-calculator";
+import { MessageSquareMore } from "lucide-react";
+import Feedback from "@/components/feedback";
 
 export default function Stairs() {
   return (
@@ -19,7 +22,7 @@ export default function Stairs() {
             <div className="relative w-full max-w-[280px] aspect-square">
               <Image
                 src="/posts/stairs/stairs.svg"
-                alt="Explaining Things Cover"
+                alt="Explicando Coisas Cover"
                 fill
                 className="object-contain"
                 priority
@@ -118,6 +121,18 @@ export default function Stairs() {
         </div>
       </div>
 
+      <div className="flex-1 flex items-center justify-center lg:justify-center w-full select-none bg-[#EDEDED]/40 p-5 border-[#333333]/10 border border-dashed opacity-70">
+        <div className="relative w-full max-w-[280px] aspect-square">
+          <Image
+            src="/posts/stairs/explaning-stairs.svg"
+            alt="Explicando Coisas Cover"
+            fill
+            className="object-contain"
+            priority
+          />
+        </div>
+      </div>
+
       <div className="w-full flex flex-col md:flex-row items-start justify-between gap-10">
         <div className="flex-1 flex flex-col gap-5 md:gap-6 text-base font-medium leading-relaxed text-justify ">
           <p className="first-line:text-2xl">Mas de onde veio essa fórmula?</p>
@@ -143,17 +158,28 @@ export default function Stairs() {
           <p>
             Blondel mediu duas coisas básicas: a altura que uma pessoa levanta o
             pé ao subir um degrau (E) e a profundidade do espaço onde o pé pousa
-            (P). E ele percebeu que, para a maioria das pessoas, o passo horizontal é o dobro da altura vertical. 
-            E
-            dois desses "E" mais um "P" resultava em algo próximo a 64
-            centímetros. Essa medida parecia ser o ponto ideal onde o movimento
-            se tornava natural e confortável.
+            (P). E ele percebeu que, para a maioria das pessoas, o passo
+            horizontal é o dobro da altura vertical. E dois desses "E" mais um
+            "P" resultava em algo próximo a 64 centímetros. Essa medida parecia
+            ser o ponto ideal onde o movimento se tornava natural e confortável.
           </p>
         </div>
       </div>
 
-      <div className="flex-1 flex gap-10 items-center justify-center lg:justify-center w-full select-none bg-[#EDEDED]/40 p-5 border-[#333333]/10 border border-dashed">
-        <p>Blondel publicou essa descoberta no seu livro "Cours d'Architecture" em 1675 e mudou para sempre a forma como construímos escadas.</p>
+      <StairCalculator />
+
+      <div className="flex-1 flex flex-col gap-5 md:gap-6 text-base font-medium leading-relaxed text-justify ">
+        <p>
+          Anos depois, ainda seguimos subindo e descendo as escadas, na maioria
+          das vezes sem nem pensar. Elas estão em todo lugar, funcionando em
+          silêncio, porque alguém decidiu observar o que parecia óbvio e medir o
+          que todos faziam por instinto.
+        </p>
+
+        <p>
+          É esse tipo de curiosidade que transforma o comum em conhecimento:
+          parar, olhar e perguntar “por que isso funciona?”.
+        </p>
       </div>
 
       <div className=" w-full">
@@ -161,7 +187,7 @@ export default function Stairs() {
           <div className="relative w-full max-w-[180px] aspect-square">
             <Image
               src="/posts/stairs/stairs.svg"
-              alt="Explaining Things Cover"
+              alt="Explicando Coisas Cover"
               fill
               className="object-contain opacity-20"
               priority
@@ -170,7 +196,7 @@ export default function Stairs() {
           <div className="relative w-full max-w-[180px] aspect-square">
             <Image
               src="/posts/stairs/bad-stairs.svg"
-              alt="Explaining Things Cover"
+              alt="Explicando Coisas Cover"
               fill
               className="object-contain opacity-20"
               priority
@@ -179,7 +205,7 @@ export default function Stairs() {
           <div className="relative w-full max-w-[180px] aspect-square">
             <Image
               src="/posts/stairs/stairs.svg"
-              alt="Explaining Things Cover"
+              alt="Explicando Coisas Cover"
               fill
               className="object-contain opacity-20"
               priority
@@ -188,7 +214,7 @@ export default function Stairs() {
           <div className="relative w-full max-w-[180px] aspect-square">
             <Image
               src="/posts/stairs/bad-stairs.svg"
-              alt="Explaining Things Cover"
+              alt="Explicando Coisas Cover"
               fill
               className="object-contain opacity-20"
               priority
@@ -196,6 +222,28 @@ export default function Stairs() {
           </div>
         </div>
       </div>
+
+      {/* Recursos e referências */}
+      <div className="w-full select-none">
+        <h4 className="text-md font-semibold mb-4 tracking-tight">
+          Recursos e referências
+        </h4>
+        <ul className="list-disc list-inside space-y-2 text-sm text-neutral-600 leading-relaxed">
+          <li>
+            François Blondel — <em>Cours d’Architecture</em> (1675)
+          </li>
+          <li>
+            Cálculo de Escada: Veja o Passo a Passo Completo Para Seu Projeto –
+            VIVADECORA
+          </li>
+          <li>Fórmula de Blondel: Como calcular Escadas? — ContruindoDecor</li>
+          <li>Calculadora de escadas Online — Arquisefaz</li>
+        </ul>
+      </div>
+
+      {/* <div className="w-full flex items-end justify-end">
+       <Feedback />
+      </div> */}
     </main>
   );
 }

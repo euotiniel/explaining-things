@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono, Inter } from "next/font/google";
 import localFont from "next/font/local";
 import { rootMetadata } from "./metadata";
+
 import "./globals.css";
 
 const geistSans = Geist({
@@ -43,7 +44,7 @@ export default function RootLayout({
       <body
         className={`${departureMono.variable} ${geistMono.variable} ${geistSans.variable} ${inter.variable} antialiased`}
       >
-        <div className="flex justify-center px-0 md:px-5 py-0 md:py-16">
+        <div className="flex justify-center px-2.5 md:px-5 py-0 md:py-16">
           <div className="flex w-full max-w-[1300px] flex-col">{children}</div>
         </div>
       </body>

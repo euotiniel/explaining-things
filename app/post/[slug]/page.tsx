@@ -59,7 +59,7 @@ export default async function PostPage({ params }: PostPageProps) {
   const PostComponent = post.component;
 
   return (
-    <main className="bg-[#F3F3F3] min-h-screen border border-dashed border-[#333333]/10 md:mt-10">
+    <main className="bg-[#F3F3F3] min-h-screen border border-dashed border-[#333333]/10 my-16">
       <article className="flex w-full flex-col">
         <header className="flex items-end justify-between border-b border-dashed border-[#333333]/10 py-6 md:py-16 px-5 md:px-20 ">
         <div className="flex flex-col items-center justify-center w-full gap-5">

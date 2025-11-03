@@ -28,13 +28,13 @@ export async function POST(req: Request) {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        from: "Explaining Things <no-reply@explainingthings.com>",
+        from: "Explicando Coisas <no-reply@explainingthings.com>",
         to: [email],
-        subject: "Bem-vindo ao Explaining Things 🔍",
+        subject: "Bem-vindo ao Explicando Coisas 🔍",
         html: `
     <p>Olá,</p>
 
-    <p>Bem-vindo ao <strong>Explaining Things</strong> — um projeto dedicado a entender o que está por trás do cotidiano.</p>
+    <p>Bem-vindo ao <strong>Explicando Coisas</strong> — um projeto dedicado a entender o que está por trás do cotidiano.</p>
 
     <p>A cada edição, você receberá explicações técnicas e visuais sobre fenômenos comuns: como uma tela reconhece o toque, o que faz o som existir, por que as escadas são projetadas do jeito que são, e muito mais.</p>
 
@@ -44,7 +44,7 @@ export async function POST(req: Request) {
 
     <br/>
     <p>— Otoniel Emanuel</p>
-    <p><em>Criador do Explaining Things</em></p>
+    <p><em>Criador do Explicando Coisas</em></p>
   `,
       }),
     });
