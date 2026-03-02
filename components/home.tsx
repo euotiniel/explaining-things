@@ -24,7 +24,7 @@ export default function Home() {
   };
 
   return (
-    <div className="bg-[#F3F3F3] min-h-screen border border-dashed border-[#333333]/10 my-16">
+    <div className="bg-[#F3F3F3] min-h-screen border border-dashed border-[#333333]/10 my-2.5 md:my-10">
       <header className="w-full flex flex-col md:flex-row items-start justify-between border-b border-dashed border-[#333333]/10 py-6 md:py-10 px-5 md:px-20 gap-4">
         <div className="flex flex-col gap-3 md:gap-5 text-start">
           <h1 className="text-2xl md:text-5xl leading-tight">
